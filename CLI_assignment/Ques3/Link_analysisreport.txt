@@ -1,0 +1,15 @@
+     Link Analysis Report 
+1. Inode Analysis:
+   total 0
+ 5066549581099207 -rw-r--r-- 2 princess princess 10 Jul  1 19:29 hardlink.txt
+ 5066549581099207 -rw-r--r-- 2 princess princess 10 Jul  1 19:29 original.txt
+85568392920255857 lrwxrwxrwx 1 princess princess 12 Jul  1 19:30 symlink.txt -> original.txt
+
+   Observation: The hard link shares the exact same Inode number as the original file, while the symbolic link has a unique Inode.
+
+2. Deletion Experiment Results: 
+   - hardlink.txt still works and contains "Linux Lab".
+   - symlink.txt : cat: symlink.txt: No such file or directory
+
+   Observation: A hard link points directly to the data on the disk, so it survives deletion.
+ A symbolic link points only to the file name, breaking when the original file is removed.

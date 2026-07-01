@@ -1,0 +1,6 @@
+    File Access and I/O Investigation Report
+1. Resource Limits (ulimit -n): a
+   Observation: This number defines the peak limit of file descriptors a process can open concurrently.
+
+2. Redirection Test:
+   Observation: output was directed to 'output.log'. Fake output (stderr) using '2>' was caught into 'error.log', verifying how Linux separates standard and error data streams.

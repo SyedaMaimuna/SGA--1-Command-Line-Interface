@@ -1,0 +1,11 @@
+      Secure Project Workspace Report 
+1. Umask Value: 0022
+   Observation: The umask determines the default file permissions assigned to newly created files.
+
+2. Permissions Before Modification: drwxr-xr-x 1 princess princess 512 Jul  1 19:15
+   Observation: The initial directory had open read/execute permissions for everyone.
+
+3. Permissions After Modification: drwx------ 1 princess princess 512 Jul  1 19:17 backup
+drwx------ 1 princess princess 512 Jul  1 19:16 docs
+drwxr-x--- 1 princess princess 512 Jul  1 19:17 source
+   Observation: Running 'chmod 750' locked down the directory so that only the owner and group members have access. Outsiders are entirely blocked, ensuring security.

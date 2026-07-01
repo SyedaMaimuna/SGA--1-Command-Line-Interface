@@ -1,0 +1,27 @@
+ Environment Report
+1. Username : princess
+   Groups   : princess adm dialout cdrom floppy sudo audio dip video plugdev users netdev
+   Observation: This confirms my current logged-in identity and system privileges
+
+2. Current Shell : /bin/bash  
+   Observation   : This indicates the command line interpreter environment I am operating in.
+
+3. Current Working Directory: /home/princess/CLI_assignment/Ques1
+   Observation: This displays the absolute path of my active workspace directory.
+
+4. Workspace Files: total 0
+drwxr-xr-x 1 princess princess 512 Jul  1 18:54 .
+drwxr-xr-x 1 princess princess 512 Jul  1 18:45 ..
+-rw-r--r-- 1 princess princess   2 Jul  1 18:54 Enviroment_Report.txt
+   Observation: This reveals all hidden and visible files present in this directory.
+
+5. Network Connectivity: PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=110 time=121 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=110 time=125 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=110 time=115 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=110 time=130 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 115.071/122.847/130.004/5.490 ms
+    Observation: The ping utility successfully transmitted packets, confirming active internet access. 

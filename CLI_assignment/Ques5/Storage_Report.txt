@@ -1,0 +1,28 @@
+    Storage Assessment Report 
+1. Disk Space Usage (df -h):
+   Filesystem      Size  Used Avail Use% Mounted on
+rootfs          504G  150G  354G  30% /
+none            504G  150G  354G  30% /dev
+none            504G  150G  354G  30% /run
+none            504G  150G  354G  30% /run/lock
+none            504G  150G  354G  30% /run/shm
+none            504G  150G  354G  30% /run/user
+tmpfs           504G  150G  354G  30% /sys/fs/cgroup
+C:\             504G  150G  354G  30% /mnt/c
+D:\             391G  4.5G  387G   2% /mnt/d
+
+2. Inode Utilization (df -i):
+   Filesystem     Inodes   IUsed   IFree IUse% Mounted on
+rootfs            999 -999001 1000000     - /
+none              999 -999001 1000000     - /dev
+none              999 -999001 1000000     - /run
+none              999 -999001 1000000     - /run/lock
+none              999 -999001 1000000     - /run/shm
+none              999 -999001 1000000     - /run/user
+tmpfs             999 -999001 1000000     - /sys/fs/cgroup
+C:\               999 -999001 1000000     - /mnt/c
+D:\               999 -999001 1000000     - /mnt/d
+
+3. Storage Health & Recommendations:
+   Observation: Space and inode limits look stable. 
+   Recommendation: Implement routine log-rotations to prevent future storage exhaustion.
